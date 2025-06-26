@@ -72,6 +72,33 @@ body {
     margin: 0.5rem 0 0;
 }
 
+/* Navegação */
+.navegacao {
+    margin-top: 1rem;
+}
+
+.navegacao .conteiner {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacao a {
+    color: var(--base);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navegacao a:hover,
+.navegacao a.active {
+    background-color: var(--secundaria);
+    color: var(--letras);
+}
+
 /* Seções */
 section {
     padding: 3rem 0;
@@ -236,5 +263,15 @@ h2 {
     
     .grade-projetos {
         grid-template-columns: 1fr;
+    }
+
+    .navegacao .conteiner {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    body.menu-open .navegacao .conteiner {
+        display: flex;
     }
 }

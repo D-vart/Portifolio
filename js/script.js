@@ -41,8 +41,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Project card hover effects
-const projectCards = document.querySelectorAll('.project-card');
+const projectCards = document.querySelectorAll('.cartao-projeto');
 
 projectCards.forEach(card => {
     card.addEventListener('mouseenter', () => {
