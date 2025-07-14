@@ -274,4 +274,19 @@ h2 {
     body.menu-open .navegacao .conteiner {
         display: flex;
     }
+
+    .botao-ver-mais {
+        width: 100%;
+        max-width: 960px;
+        margin: 2rem auto 0 auto;
+        text-align: center;
+    }
+
+    .botao-ver-mais .link-projeto {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
 }
